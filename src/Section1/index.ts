@@ -1,3 +1,5 @@
+// イントロダクション
+
 // const str: string = "foobar";
 
 function repeatHello(count: number): string {

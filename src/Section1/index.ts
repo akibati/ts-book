@@ -26,3 +26,6 @@ function double(value: string | number) {
 
 double(223);
 double("hello");
+
+const message: string = "Hello, world";
+console.log(message);

@@ -32,15 +32,15 @@ const rl = createInterface({
 //     rl.close();
 // })
 
-// rl.question('数値を入力してください:', (line) => {
-//     const num = Number(line);
-//     if (0 <= num && num < 100) {
-//         console.log(`${num}は0以上100未満です`);
-//     } else {
-//         console.log(`${num}は0以上100未満ではありません`);
-//     }
-//     rl.close();
-// })
+rl.question('数値を入力してください:', (line) => {
+    const num = Number(line);
+    const message = 0 <= num && num < 100
+        ? `${num}は0以上100未満です`
+        : `${num}は0以上100未満ではありません`;
+    console.log(message);
+
+    rl.close();
+})
 
 // rl.question("名前を入力してください:", (name) => {
 //     const displayName = name || getDefaultName();
@@ -52,5 +52,5 @@ const rl = createInterface({
 //     return "名無し";
 // }
 
-const secret = process.env.SECRET ?? "default";
-console.log(`secretは${secret}です`);
+// const secret = process.env.SECRET ?? "default";
+// console.log(`secretは${secret}です`);

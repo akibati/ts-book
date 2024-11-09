@@ -42,12 +42,15 @@ const rl = createInterface({
 //     rl.close();
 // })
 
-rl.question("名前を入力してください:", (name) => {
-    const displayName = name || getDefaultName();
-    console.log(`こんにちは、${displayName}さん`);
-    rl.close();
-});
+// rl.question("名前を入力してください:", (name) => {
+//     const displayName = name || getDefaultName();
+//     console.log(`こんにちは、${displayName}さん`);
+//     rl.close();
+// });
 
-function getDefaultName() {
-    return "名無し";
-}
+// function getDefaultName() {
+//     return "名無し";
+// }
+
+const secret = process.env.SECRET ?? "default";
+console.log(`secretは${secret}です`);

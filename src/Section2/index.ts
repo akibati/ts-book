@@ -43,7 +43,11 @@ const rl = createInterface({
 // })
 
 rl.question("名前を入力してください:", (name) => {
-    const displayName = name || "名無し";
+    const displayName = name || getDefaultName();
     console.log(`こんにちは、${displayName}さん`);
     rl.close();
 });
+
+function getDefaultName() {
+    return "名無し";
+}

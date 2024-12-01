@@ -34,12 +34,47 @@ import { createInterface } from "readline";
 
 // console.log(obj3);
 
-const foo = {
-    num: 123,
+// const foo = {
+//     num: 123,
+// }
+// const bar = foo;
+// console.log(bar.num);
+// bar.num = 0;
+// console.log(foo.num);
+
+// const foo = {
+//     num: 1234,
+// };
+// const bar = {
+//     ...foo,     // fooのコピーでオブジェクトは別になる
+// };
+// console.log(bar.num);
+// bar.num = 0;
+// console.log(foo.num);
+
+// const foo = {
+//     obj: {
+//         num: 1234,
+//     }
+// };
+// const bar = {
+//     ...foo,
+// }
+// bar.obj.num = 0;
+// console.log(foo);
+
+// const obj = {
+//     foo: 123,
+//     bar: "hello, world"
+// };
+// console.log(obj.baz);
+
+type FooBarObj = {
+    foo: number,
+    bar: string,
 }
-const bar = foo;
-console.log(bar.num);
-bar.num = 0;
-console.log(foo.num);
 
-
+const obj: FooBarObj = {
+    foo: 123,
+    bar: "hello"
+}

@@ -79,12 +79,25 @@ import { createInterface } from "readline";
 //     bar: "hello"
 // }
 
-interface FooBarObj {
-  foo: number,
-  bar: string,
+// interface FooBarObj {
+//   foo: number,
+//   bar: string,
+// };
+
+// const obj: FooBarObj = {
+//   foo: 123,
+//   bar: "hello"
+// }
+
+type PriceData = {
+  [key: string]: number,
 };
 
-const obj: FooBarObj = {
-  foo: 123,
-  bar: "hello"
-}
+const data: PriceData = {
+  apple: 220,
+  coffee: 120,
+  bento: 500,
+};
+data.chicken = 250;
+data.弁当 = 600;
+console.log(data);

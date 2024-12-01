@@ -69,12 +69,22 @@ import { createInterface } from "readline";
 // };
 // console.log(obj.baz);
 
-type FooBarObj = {
-    foo: number,
-    bar: string,
-}
+// type FooBarObj = {
+//     foo: number,
+//     bar: string,
+// }
+
+// const obj: FooBarObj = {
+//     foo: 123,
+//     bar: "hello"
+// }
+
+interface FooBarObj {
+  foo: number,
+  bar: string,
+};
 
 const obj: FooBarObj = {
-    foo: 123,
-    bar: "hello"
+  foo: 123,
+  bar: "hello"
 }
